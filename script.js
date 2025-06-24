@@ -56,7 +56,7 @@ function renderSummaryCard(icon, title, value) {
                 <div class="card-body d-flex align-items-center ">
                     <i class="fas ${icon} fa-2x me-3" style="color: #7C3AED"></i>
                     <div>
-                        <h6 class="card-title mb-1">${title}</h6>
+                        <h6 class="card-title mb-1 fw-bold">${title}</h6>
                         <p class="card-text mb-0">${value}</p>
                     </div>
                 </div>
