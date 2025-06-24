@@ -33,7 +33,7 @@ function fetchSummary(lat, lon) {
         .then(res => res.json())
         .then(data => {
             document.getElementById('summary').innerHTML = `
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 justify-content-lg-center g-3">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 justify-content-center g-3">
                     ${renderSummaryCard("fa-gauge-high", "Śr. ciśnienie", `${data.avgPressure} hPa`)}
                     ${renderSummaryCard("fa-sun", "Śr. czas ekspozycji na słońce", `${data.avgSunshineHours} h`)}
                     ${renderSummaryCard("fa-temperature-high", "Temp. max", `${data.maxTemp}°C`)}
@@ -51,9 +51,9 @@ function fetchSummary(lat, lon) {
 //Funkcja pomocznicza, która tworzy element podsumowania
 function renderSummaryCard(icon, title, value) {
     return `
-        <div class="col col-lg-2">
+        <div class="col col-md-6 col-lg-2">
             <div class="card h-100 shadow-sm border-0">
-                <div class="card-body d-flex align-items-center">
+                <div class="card-body d-flex align-items-center ">
                     <i class="fas ${icon} fa-2x me-3" style="color: #7C3AED"></i>
                     <div>
                         <h6 class="card-title mb-1">${title}</h6>
