@@ -1,0 +1,33 @@
+#map {
+    height: 300px;
+}
+
+.intro {
+    background-color: #7C3AED;
+    color: white;
+    padding: 2rem 0;
+}
+
+#forecast th,
+#forecast td {
+    max-width: 6rem;
+    min-width: 6rem;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+footer {
+    background-color: #7C3AED;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    #forecast th:not(:first-child) {
+        font-size: 0.7rem;
+        padding: 0.3rem 0.1rem;
+    }
+
+    #forecast td {
+        font-size: 0.8rem;
+    }
+}

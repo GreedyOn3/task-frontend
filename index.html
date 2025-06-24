@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Prognoza pogody</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-light d-flex flex-column min-vh-100">
+
+    <section class="intro shadow">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-3">
+                    <h1 class="mb-3 display-4">Prognoza Pogody</h1>
+                    <p>Zaznacz lokalizację na mapie, aby zobaczyć prognozę dla wybranego przez siebie miejsca.</p>
+                </div>
+                <div class="col">
+                    <div id="map" class="shadow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container py-4">
+        <div>
+            <h4>Prognoza na następne 7 dni:</h4>
+            <div id="forecast" class="table-responsive-lg">Wczytywanie...</div>
+        </div>
+    </div>
+
+    <footer class="mt-auto p-3 border-top shadow">
+        <div class="container">
+            <h4>Podsumowanie najbliższego tygodnia:</h4>
+            <div class="my-3">
+                <div id="summary" class="mb-0">Wczytywanie...</div>
+            </div>
+       
+            <span class="mt-5 font-italic font-weight-light" style="font-size: 0.8rem;"> Strona wykonana na rzecz zadania rekrutacyjnego dla Codibly S.A. przez Dominika Nowaka</span>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
