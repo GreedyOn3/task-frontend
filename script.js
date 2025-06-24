@@ -118,7 +118,7 @@ function updateMap(lat, lon) {
 
         marker = L.marker([lat, lon], { draggable: false })
             .addTo(map)
-            .bindPopup("Twoja lokalizacja")
+            .bindPopup("Wybrana lokalizacja")
             .openPopup();
 
         map.on('click', function (e) {
